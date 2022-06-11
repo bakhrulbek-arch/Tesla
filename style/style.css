@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.container {
+    width: auto;
+    overflow: hidden;
+}
+
+.blc_top {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about_top{
+    display: flex;
+    gap: 60px;
+    margin-bottom: 30px;
+}

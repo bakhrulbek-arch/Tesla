@@ -1,0 +1,15 @@
+.img {
+    width: 865px;
+    margin: 150px auto;
+}
+
+.front {
+    position: relative;
+    top: 4.7px;
+    right: 21.5%;
+}
+.rear {
+    position: relative;
+    top: -109px;
+    left: 10%;
+}
