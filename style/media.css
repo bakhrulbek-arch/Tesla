@@ -6,6 +6,7 @@
 
 @media only screen and (max-height: 825px) {
     .img {
+        /* margin-top: 10px; */
         margin-bottom: -120px;
     }
 
@@ -13,6 +14,16 @@
         display: block;
         position: relative;
         top: -110px;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    .img {
+        margin-top: 40px;
     }
 }
 
@@ -26,16 +37,13 @@
     }
 }
 
-@media only screen and (max-width: 1040px) {
-
-    /* .img {
-        position: relative;
-        left: -5%;
-    } */
+@media only screen and (max-width: 1145px) {
     .blc_top {
-        margin-left: -90px;
+        margin-left: -100px;
     }
 }
+
+
 
 @media only screen and (max-width: 960px) {
     .img {
