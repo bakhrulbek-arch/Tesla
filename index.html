@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/img.css">
+    <link rel="stylesheet" href="style/set.css">
+    <link rel="stylesheet" href="style/media.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <div class="blc_top">
             <div class="img">
+                <link rel="stylesheet" href="fonts/stylesheet.css">
                 <img src="img/tesla.PNG" alt="" class="tesla">
-                <img src="img/16_size.png" alt="" class="front">
-                <img src="img/16_size.png" alt="" class="rear">
+                <img src="img/18_size.png" alt="" class="front">
+                <img src="img/18_size.png" alt="" class="rear">
             </div>
             <div class="about_info">
                 <div class="about_top">
                     <div class="ab_top_left">
                         <p>Запас хода</p>
                         <div class="ab_top_set">
-                            <h2 class="zp">790</h2><b>KM</b>
+                            <h2 class="res zp">750</h2><b>KM</b>
                         </div>
                     </div>
                     <div class="ab_top_right">
                         <p>Цена</p>
                         <div class="ab_top_set">
-                            <b>$</b><h2 class="price">48000</h2>
+                            <b>$</b>
+                            <h2 class="price">89<span>,</span>990</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about_bottom">
+                    <div>
+                        <p>Скорость автомобиля</p>
+                        <h2 class="speed">60</h2>
+                    </div>
+                    <div class="tp">
+                        <img class="speedtop" src="./img/top.png">
+                        <img class="speedbot" src="./img/bottom.png">
+                    </div>
+                    <div>
+                        <p>Температура за окнами</p>
+                        <div class="ab_top_set">
+                            <h2 class="temp">20</h2><b>°</b>
+                        </div>
+                    </div>
+                    <div class="tp">
+                        <img class="temptop" src="./img/top.png">
+                        <img class="temptop" src="./img/bottom.png">
+                    </div>
+                    <div>
+                        <p>Диски</p>
+                        <h2 class="disk">16</h2>
+                    </div>
+                    <div class="tp">
+                        <img class="disktop" src="./img/top.png">
+                        <img class="disktop" src="./img/bottom.png">
+                    </div>
+                    <div class="blc_right">
+                        <div>
+                            <p>Кондиционер</p>
+                            <input type="checkbox" class="kond">
+                        </div>
+                        <div>
+                            <p>Версия Long Range</p>
+                            <input type="checkbox" class="version">
+                        </div>
+                        <div class="viwi">
+                            <p>Вид автомобиля</p>
+                            <input type="checkbox" class="view" checked>
                         </div>
                     </div>
                 </div>
@@ -37,4 +86,5 @@
     </div>
     <script src="app/app.js"></script>
 </body>
+
 </html>
