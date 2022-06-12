@@ -157,13 +157,13 @@ function ver(item) {
 
 // let view = document.querySelector('.view')
 let price2 = document.querySelector('#pr')
-let view2 = document.querySelector('#vw')
+
 // vid()
 // function vid() {
 //     view.onclick = () => {
 //         if (view.checked == false) {
 //             price.innerHTML = parseInt(price.innerHTML) + 5500
-//             console.log('asdsad');
+//             
 //         } else {
 //             price.innerHTML = parseInt(price.innerHTML) - 5500
 //         }
@@ -175,7 +175,7 @@ let view2 = document.querySelector('#vw')
 //     view2.onclick = () => {
 //         if (view2.checked == false) {
 //             price2.innerHTML = parseInt(price2.innerHTML) + 5500
-//             console.log('asdsad');
+//           
 //         } else {
 //             price2.innerHTML = parseInt(price2.innerHTML) - 5500
 //         }
@@ -205,9 +205,10 @@ let tesla_img = document.querySelector('.img')
 let cont = document.querySelector('.blc_bottom')
 let blc_top = document.querySelector(".blc_top")
 tesla.onclick = () => {
+
     tesla_img.style.transform = 'scale(18)'
     cont.classList.add('active')
-    
+
     setTimeout(() => {
         cont.classList.add('act')
         tesla.style.transform = 'scale(1)'
@@ -216,4 +217,51 @@ tesla.onclick = () => {
     setTimeout(() => {
         blc_top.classList.add("blc_top_none")
     }, 300);
+
+}
+let view = document.querySelector('.view')
+let view2 = document.querySelector('#vw')
+vid()
+function vid() {
+    view.onclick = () => {
+        if (view.checked == false) {
+            // price.innerHTML = parseInt(price.innerHTML) + 5500
+            tesla_img.style.transform = 'scale(18)'
+            cont.classList.add('active')
+
+            setTimeout(() => {
+                cont.classList.add('act')
+                tesla.style.transform = 'scale(1)'
+            }, 300);
+
+            setTimeout(() => {
+                blc_top.classList.add("blc_top_none")
+            }, 300);
+
+        } else if(view.checked == true){
+            tesla_img.style.transform = 'scale(0)'
+            cont.classList.remove('active')
+
+            setTimeout(() => {
+                cont.classList.remove('act')
+                tesla.style.transform = 'scale(-18)'
+            }, 300);
+
+            setTimeout(() => {
+                blc_top.classList.add("blc_top_none")
+            }, 300);
+        }
+    }
+}
+
+vid2()
+function vid2() {
+    view2.onclick = () => {
+        if (view2.checked == false) {
+            price2.innerHTML = parseInt(price2.innerHTML) + 5500
+
+        } else {
+            price2.innerHTML = parseInt(price2.innerHTML) - 5500
+        }
+    }
 }
