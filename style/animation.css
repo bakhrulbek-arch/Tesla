@@ -1,11 +1,11 @@
 .front {
-    animation: twists .1ms ease infinite;
-    transition: .3 ease;
+    animation: twists 1ms linear infinite;
+    transition: 1s ease;
 }
 
 .rear {
-    animation: twists .1ms ease infinite;
-    transition: .3 ease;
+    animation: twists 1ms linear infinite;
+    transition: 1s ease;
 }
 
 @keyframes twists {
@@ -13,39 +13,7 @@
         transform: rotateZ(0deg);
     }
 
-    11% {
-        transform: rotateZ(180deg);
-    }
-
-    22% {
-        transform: rotateZ(360deg);
-    }
-
-    33% {
-        transform: rotateZ(0deg);
-    }
-
-    44% {
-        transform: rotateZ(180deg);
-    }
-
-    55% {
-        transform: rotateZ(360deg);
-    }
-
-    66% {
-        transform: rotateZ(0deg);
-    }
-
-    77% {
-        transform: rotateZ(180deg);
-    }
-
-    88% {
-        transform: rotateZ(360deg);
-    }
-
     100% {
-        transform: rotateZ(0deg);
+        transform: rotateZ(360deg);
     }
 }
