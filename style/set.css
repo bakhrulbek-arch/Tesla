@@ -72,6 +72,7 @@ input:checked[type="checkbox"]::before {
 .about_bottom div {
     margin: 0 auto;
     transition: .3s ease;
+
 }
 
 .blc_right {

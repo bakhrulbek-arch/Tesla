@@ -1,0 +1,93 @@
+.blc_bottom {
+    width: 100%;
+}
+
+
+.black {
+    width: 35px;
+    height: 35px;
+    background: black;
+    border-radius: 50%;
+}
+
+.white {
+    width: 35px;
+    height: 35px;
+    background: rgb(205, 201, 201);
+    border-radius: 50%;
+}
+
+.yellow {
+    width: 35px;
+    height: 35px;
+    background: gold;
+    border-radius: 50%;
+}
+
+.size {
+    width: 1240px;
+    height: 697px;
+}
+
+.cir, .cir2, .cir3 {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
+
+.cir {
+    background-color: #262626;
+}
+
+.cir2 {
+    background-color: #EFEFEF;
+}
+
+.cir3 {
+    background-color: #E6DDD0;
+}
+
+.tem {
+    display: flex;
+    gap: 10px;
+}
+
+#tesla {
+    width: 90%;
+}
+
+.blc_top_none {
+    display: none;
+}
+
+.blc_bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: none;
+    background-color: white;
+    transition: .5s ease;
+    opacity: 0;
+    overflow-y: hidden;
+}
+
+.active {
+    display: block;
+}
+
+.act {
+    opacity: 1;
+    margin: 0px;
+}
+
+.viwi_2 {
+    /* display: none; */
+}
+
+.gif {
+    width: 100%;
+    height: 400px;
+}

@@ -21,7 +21,7 @@ function wheel_t() {
             front.src = "img/22_size.png"
             rear.src = "img/22_size.png"
             price.innerHTML = parseInt(price.innerHTML) + 2400
-        } 
+        }
     }
 }
 function wheel_b() {
@@ -155,3 +155,65 @@ function ver(item) {
     }
 }
 
+// let view = document.querySelector('.view')
+let price2 = document.querySelector('#pr')
+let view2 = document.querySelector('#vw')
+// vid()
+// function vid() {
+//     view.onclick = () => {
+//         if (view.checked == false) {
+//             price.innerHTML = parseInt(price.innerHTML) + 5500
+//             console.log('asdsad');
+//         } else {
+//             price.innerHTML = parseInt(price.innerHTML) - 5500
+//         }
+//     }
+// }
+
+// vid2()
+// function vid2() {
+//     view2.onclick = () => {
+//         if (view2.checked == false) {
+//             price2.innerHTML = parseInt(price2.innerHTML) + 5500
+//             console.log('asdsad');
+//         } else {
+//             price2.innerHTML = parseInt(price2.innerHTML) - 5500
+//         }
+//     }
+// }
+
+let cir = document.querySelector('.cir')
+let cir2 = document.querySelector('.cir2')
+let cir3 = document.querySelector('.cir3')
+let img_salon = document.querySelector('#tesla')
+
+cir.onclick = () => {
+    img_salon.src = './img/salon.png'
+    price2.innerHTML = '+49000'
+}
+cir2.onclick = () => {
+    img_salon.src = './img/white.png'
+    price2.innerHTML = '+52000'
+}
+cir3.onclick = () => {
+    img_salon.src = './img/yellow.png'
+    price2.innerHTML = '+57000'
+}
+
+let tesla = document.querySelector('.tesla')
+let tesla_img = document.querySelector('.img')
+let cont = document.querySelector('.blc_bottom')
+let blc_top = document.querySelector(".blc_top")
+tesla.onclick = () => {
+    tesla_img.style.transform = 'scale(18)'
+    cont.classList.add('active')
+    
+    setTimeout(() => {
+        cont.classList.add('act')
+        tesla.style.transform = 'scale(1)'
+    }, 300);
+
+    setTimeout(() => {
+        blc_top.classList.add("blc_top_none")
+    }, 300);
+}
