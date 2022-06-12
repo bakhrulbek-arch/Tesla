@@ -16,7 +16,7 @@ input[type="checkbox"] {
 }
 
 input:checked[type="checkbox"] {
-    background: #03f463;
+    background: #c9df03e3;
 
 }
 

@@ -1,6 +1,6 @@
 .front {
     animation: twists .1ms ease infinite;
-    /* transition: .3 ease; */
+    transition: .3 ease;
 }
 
 .rear {
@@ -13,11 +13,39 @@
         transform: rotateZ(0deg);
     }
 
-    50% {
+    11% {
         transform: rotateZ(180deg);
     }
 
-    100% {
+    22% {
         transform: rotateZ(360deg);
+    }
+
+    33% {
+        transform: rotateZ(0deg);
+    }
+
+    44% {
+        transform: rotateZ(180deg);
+    }
+
+    55% {
+        transform: rotateZ(360deg);
+    }
+
+    66% {
+        transform: rotateZ(0deg);
+    }
+
+    77% {
+        transform: rotateZ(180deg);
+    }
+
+    88% {
+        transform: rotateZ(360deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
     }
 }
