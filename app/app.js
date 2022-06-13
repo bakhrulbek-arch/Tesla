@@ -225,7 +225,6 @@ function view_bot(item) {
     item.onclick = () => {
         if (item.checked == true) {
             view_t.checked = false;
-            // txt.innerHTML = "Салон автомобиля"
             tesla_img.style.transform = 'scale(1)'
             cont.classList.remove('active')
             setTimeout(() => {
