@@ -136,6 +136,7 @@ let ver_avto = document.querySelector(".tesla")
 ver(version)
 let audio_ad = new Audio('./sound/Tesla_Roadster_2020.mp3')
 let audio_long_range = new Audio('./sound/Driving_Sport_Rock.mp3')
+
 //version auto
 function ver(item) {
     item.onclick = () => {
@@ -155,47 +156,22 @@ function ver(item) {
     }
 }
 
-// let view = document.querySelector('.view')
 let price2 = document.querySelector('#pr')
 
-// vid()
-// function vid() {
-//     view.onclick = () => {
-//         if (view.checked == false) {
-//             price.innerHTML = parseInt(price.innerHTML) + 5500
-//             
-//         } else {
-//             price.innerHTML = parseInt(price.innerHTML) - 5500
-//         }
-//     }
-// }
-
-// vid2()
-// function vid2() {
-//     view2.onclick = () => {
-//         if (view2.checked == false) {
-//             price2.innerHTML = parseInt(price2.innerHTML) + 5500
-//           
-//         } else {
-//             price2.innerHTML = parseInt(price2.innerHTML) - 5500
-//         }
-//     }
-// }
-
-let cir = document.querySelector('.cir')
-let cir2 = document.querySelector('.cir2')
-let cir3 = document.querySelector('.cir3')
+let salon_black = document.querySelector('.salon_black')
+let salon_white = document.querySelector('.salon_white')
+let salon_yellow = document.querySelector('.salon_yellow')
 let img_salon = document.querySelector('#tesla')
 
-cir.onclick = () => {
+salon_black.onclick = () => {
     img_salon.src = './img/salon.png'
     price2.innerHTML = '+49000'
 }
-cir2.onclick = () => {
+salon_white.onclick = () => {
     img_salon.src = './img/white.png'
     price2.innerHTML = '+52000'
 }
-cir3.onclick = () => {
+salon_yellow.onclick = () => {
     img_salon.src = './img/yellow.png'
     price2.innerHTML = '+57000'
 }
@@ -205,7 +181,7 @@ let tesla_img = document.querySelector('.img')
 let cont = document.querySelector('.blc_bottom')
 let blc_top = document.querySelector(".blc_top")
 tesla.onclick = () => {
-
+    view_b.checked = false;
     tesla_img.style.transform = 'scale(18)'
     cont.classList.add('active')
 
@@ -219,13 +195,16 @@ tesla.onclick = () => {
     }, 300);
 
 }
-let view = document.querySelector('.view')
-let view2 = document.querySelector('#vw')
-vid()
-function vid() {
-    view.onclick = () => {
-        if (view.checked == false) {
-            // price.innerHTML = parseInt(price.innerHTML) + 5500
+
+let view_t = document.querySelector('.view_t')
+let view_b = document.querySelector('.view_b')
+
+view_top(view_t)
+view_bot(view_b)
+function view_top(item) {
+    item.onclick = () => {
+        if (item.checked == true) {
+            view_b.checked = false;
             tesla_img.style.transform = 'scale(18)'
             cont.classList.add('active')
 
@@ -237,31 +216,27 @@ function vid() {
             setTimeout(() => {
                 blc_top.classList.add("blc_top_none")
             }, 300);
-
-        } else if(view.checked == true){
-            tesla_img.style.transform = 'scale(0)'
-            cont.classList.remove('active')
-
-            setTimeout(() => {
-                cont.classList.remove('act')
-                tesla.style.transform = 'scale(-18)'
-            }, 300);
-
-            setTimeout(() => {
-                blc_top.classList.add("blc_top_none")
-            }, 300);
+            
         }
     }
 }
 
-vid2()
-function vid2() {
-    view2.onclick = () => {
-        if (view2.checked == false) {
-            price2.innerHTML = parseInt(price2.innerHTML) + 5500
+function view_bot(item) {
+    item.onclick = () => {
+        if (item.checked == true) {
+            view_t.checked = false;
+            // txt.innerHTML = "Салон автомобиля"
+            tesla_img.style.transform = 'scale(1)'
+            cont.classList.remove('active')
+            setTimeout(() => {
+                cont.classList.remove('act')
+                tesla.style.transform = 'scale(1)'
+            }, 300);
 
-        } else {
-            price2.innerHTML = parseInt(price2.innerHTML) - 5500
+            setTimeout(() => {
+                blc_top.classList.remove("blc_top_none")
+            }, 300);
+            
         }
     }
 }

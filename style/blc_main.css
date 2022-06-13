@@ -29,21 +29,21 @@
     height: 697px;
 }
 
-.cir, .cir2, .cir3 {
+.salon_black, .salon_white, .salon_yellow {
     width: 35px;
     height: 35px;
     border-radius: 100px;
 }
 
-.cir {
+.salon_black {
     background-color: #262626;
 }
 
-.cir2 {
+.salon_white {
     background-color: #EFEFEF;
 }
 
-.cir3 {
+.salon_yellow {
     background-color: #E6DDD0;
 }
 
@@ -58,6 +58,10 @@
 
 .blc_top_none {
     display: none;
+}
+
+.blc_b_checked {
+    display: flex;
 }
 
 .blc_bottom {
@@ -81,13 +85,4 @@
 .act {
     opacity: 1;
     margin: 0px;
-}
-
-.viwi_2 {
-    /* display: none; */
-}
-
-.gif {
-    width: 100%;
-    height: 400px;
 }
