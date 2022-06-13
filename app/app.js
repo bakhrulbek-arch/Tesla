@@ -13,13 +13,13 @@ function wheel_t() {
     wheel_top.onclick = () => {
         if (parseInt(disk.innerHTML) <= 16) {
             disk.innerHTML = parseInt(disk.innerHTML) + 3
-            front.src = "img/19_size.png"
-            rear.src = "img/19_size.png"
+            front.src = "./img/19_size.png"
+            rear.src = "./img/19_size.png"
             price.innerHTML = parseInt(price.innerHTML) + 2400
         } else if (parseInt(disk.innerHTML) === 19) {
             disk.innerHTML = parseInt(disk.innerHTML) + 3
-            front.src = "img/22_size.png"
-            rear.src = "img/22_size.png"
+            front.src = "./img/22_size.png"
+            rear.src = "./img/22_size.png"
             price.innerHTML = parseInt(price.innerHTML) + 2400
         }
     }
@@ -28,13 +28,13 @@ function wheel_b() {
     wheel_bottom.onclick = () => {
         if (parseInt(disk.innerHTML) === 19) {
             disk.innerHTML = parseInt(disk.innerHTML) - 3
-            front.src = "img/16_size.png"
-            rear.src = "img/16_size.png"
+            front.src = "./img/16_size.png"
+            rear.src = "./img/16_size.png"
             price.innerHTML = parseInt(price.innerHTML) - 2400
         } else if (parseInt(disk.innerHTML) === 22) {
             disk.innerHTML = parseInt(disk.innerHTML) - 3
-            front.src = "img/19_size.png"
-            rear.src = "img/19_size.png"
+            front.src = "./img/19_size.png"
+            rear.src = "./img/19_size.png"
             price.innerHTML = parseInt(price.innerHTML) - 2400
         }
     }
