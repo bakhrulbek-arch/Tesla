@@ -127,7 +127,7 @@ function kondit() {
             stat.innerHTML = parseInt(stat.innerHTML) - 40
             setInterval(function kk() {
                 stat.innerHTML = parseInt(stat.innerHTML) - 0.1
-            }, 500);
+            }, 5000);
         }
     }
 }
