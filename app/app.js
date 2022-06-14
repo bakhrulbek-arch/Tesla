@@ -99,9 +99,6 @@ function temp_t() {
         if (temp.innerHTML >= 23) {
             kond.checked = true;
             anm.classList.add("active_anm")
-            setInterval(function () {
-                stat.innerHTML = parseInt(stat.innerHTML) - 0.1
-            }, 800);
         }
     }
 }
@@ -126,7 +123,7 @@ function kondit() {
         } else {
             stat.innerHTML = parseInt(stat.innerHTML) - 40
             setInterval(function kk() {
-                stat.innerHTML = parseInt(stat.innerHTML) - 0.1
+                stat.innerHTML = parseInt(stat.innerHTML) - 0.00001
             }, 5000);
         }
     }
@@ -216,7 +213,7 @@ function view_top(item) {
             setTimeout(() => {
                 blc_top.classList.add("blc_top_none")
             }, 300);
-            
+
         }
     }
 }
@@ -235,7 +232,7 @@ function view_bot(item) {
             setTimeout(() => {
                 blc_top.classList.remove("blc_top_none")
             }, 300);
-            
+
         }
     }
 }
