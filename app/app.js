@@ -143,13 +143,13 @@ function ver(item) {
         if (item.checked == false) {
             stat.innerHTML = parseInt(stat.innerHTML) + 29
             price.innerHTML = parseInt(price.innerHTML) - 10009
-            ver_avto.src = "img/tesla.png"
+            ver_avto.src = "./img/tesla.png"
             audio_long_range.pause()
             audio_ad.play()
         } else {
             stat.innerHTML = parseInt(stat.innerHTML) - 29
             price.innerHTML = parseInt(price.innerHTML) + 10009
-            ver_avto.src = "img/tesla_2.png"
+            ver_avto.src = "./img/tesla_2.png"
             audio_ad.pause()
             audio_long_range.play()
         }
